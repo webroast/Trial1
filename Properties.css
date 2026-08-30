@@ -1,0 +1,526 @@
+/* ==========================================
+   1. NAVBAR STYLES
+   ========================================== */
+
+  body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+.bg-custom-dark {
+  background-color: #1a233a;
+}
+
+.brand-title {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.brand-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #d1b88a;
+  border-top: 1px solid rgba(209, 184, 138, 0.4);
+  padding-top: 4px;
+  margin-top: 4px;
+}
+
+.custom-navbar .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  transition: 0.2s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #d1b88a;
+}
+
+.btn-gold {
+  background: linear-gradient(180deg, #f0c52f 0%, #c48b0a 100%);
+  color: #0d1322;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  border: 1px solid #ffe885;
+  border-radius: 2px;
+  padding: 0.6rem 1.4rem;
+  box-shadow: 0px 0px 10px rgba(240, 197, 47, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(180deg, #f7d247 0%, #d49710 100%);
+  color: #000000;
+  box-shadow: 0px 0px 15px rgba(240, 197, 47, 0.5);
+}
+
+
+/* ==========================================
+   2. MARQUEE / TICKER BAR STYLES
+   ========================================== */
+.ticker-bar {
+  background-color: #151c2e;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.ticker-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 13s linear infinite;
+}
+
+.ticker-wrapper:hover {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: #d1d5db;
+  padding: 0 1.5rem;
+}
+
+.ticker-bullet {
+  color: #d1b88a;
+  margin-right: 12px;
+  font-size: 1rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* ==========================================
+   3. GLOBAL STYLES & LAYOUT
+   ========================================== */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ==========================================
+   4. HERO DARK SECTION
+   ========================================== */
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.hero-dark-bg {
+  background-color: #23314d;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.hero-container {
+  max-width: 1200px;
+}
+
+.hero-title {
+  font-family: 'Cinzel', serif;
+  font-size: 35px;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.custom-title {
+  font-size: 48px; /* Makes the first letter taller */
+}
+
+.hero-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #a1adcf;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+
+/* ==========================================
+   5. SEARCH BAR (INSIDE WHITE INPUT & GOLD BUTTON)
+   ========================================== */
+.search-bar-wrapper {
+  display: flex;
+  left: 20%;
+  max-width: 1175px;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-search-input {
+  height: 52px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #495057;
+  padding-left: 20px;
+}
+
+.main-search-input::placeholder {
+  color: #9098a8;
+}
+
+.main-search-input:focus {
+  box-shadow: none;
+  border: none;
+  background-color: #ffffff;
+}
+
+.btn-gold-send {
+  background-color: #cbab6e;
+  color: #23314d;
+  width: 58px;
+  height: 52px;
+  border: none;
+  border-radius: 0;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.btn-gold-send:hover {
+  background-color: #b8985c;
+  color: #1a233a;
+}
+
+
+/* ==========================================
+   6. FILTER CARD (WHITE CONTAINER BELOW)
+   ========================================== */
+.filter-container {
+  max-width: 1200px;
+  margin-top: 15px;
+}
+
+.filter-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px 28px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eaeaea;
+}
+
+.filter-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1a233a;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.filter-select {
+  height: 40px;
+  width: 280px;
+  border: 1px solid #dcdfe6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #8c93a1;
+  padding-left: 14px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.filter-select:focus {
+  border-color: #cbab6e;
+  box-shadow: none;
+}
+
+.custom-checkbox .form-check-input {
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  border: 2px solid #ccd2e0;
+  cursor: pointer;
+  margin-top: 0;
+}
+
+.custom-checkbox .form-check-input:checked {
+  background-color: #23314d;
+  border-color: #23314d;
+}
+
+.custom-checkbox .filter-label {
+  cursor: pointer;
+}
+
+
+/* ==========================================
+   7. FLOATING SIDEBAR (CALL & WHATSAPP)
+   ========================================== */
+.side-widget {
+  position: fixed;
+  left: 0;
+  top: 48%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-btn {
+  width: 44px;
+  height: 44px;
+  background-color: #192338;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background-color 0.2s ease;
+}
+
+.call-btn {
+  color: #cbab6e;
+}
+
+.whatsapp-btn {
+  color: #25d366;
+}
+
+.side-btn:hover {
+  background-color: #101726;
+}
+
+
+/* ==========================================
+   8. PROPERTY CARDS
+   ========================================== */
+.property-card {
+  border-radius: 0;
+  background-color: #ffffff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card-img-wrapper {
+  overflow: hidden;
+  height: 240px;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.property-location {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #c0a47c;
+  font-weight: 500;
+}
+
+.property-title {
+  font-family: 'Cinzel', 'Times New Roman', serif;
+  font-size: 1.25rem;
+  color: #1a2332;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.price {
+  font-size: 1.05rem;
+  color: #1a2332;
+}
+
+.specs {
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+}
+
+.property-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.property-card:hover .card-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.sobha-card:hover .sobha-title {
+  color: #c0a47c !important;
+}
+
+.card-divider {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 1.25rem 0 1rem 0;
+  opacity: 1;
+}
+
+
+/* ==========================================
+   9. PAGINATION
+   ========================================== */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.page-btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e8f0;
+  background-color: #f8f9fa;
+  color: #a0aec0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.page-btn.active {
+  background-color: #242c3d;
+  color: #ffffff;
+  border-color: #242c3d;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.page-btn.num {
+  color: #242c3d;
+  background-color: #ffffff;
+  border-color: #e2e8f0;
+}
+
+.page-btn:hover:not(.disabled):not(.active) {
+  border-color: #cbd5e0;
+  color: #242c3d;
+}
+
+.page-btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+
+/* ==========================================
+   10. FOOTER (new footer-section markup)
+   ========================================== */
+.text-gold {
+  color: #c5a059 !important;
+}
+
+.footer-section {
+  background-color: #080d18;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+}
+
+.footer-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+.social-box {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.social-box:hover {
+  border-color: #c5a059;
+  color: #c5a059;
+}
+
+.footer-heading {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.2rem;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #c5a059;
+}
+
+.footer-contact li {
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.8rem;
+}
+
+.badge-rera {
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  color: #c5a059;
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  padding: 4px 10px;
+}

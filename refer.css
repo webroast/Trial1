@@ -1,0 +1,427 @@
+/* ==========================================
+   1. GLOBAL RESET & BASE SETUP
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7f9fb;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.text-gold {
+  color: #c5a059 !important;
+}
+
+/* ==========================================
+   2. FLOATING WIDGETS
+   ========================================== */
+.floating-contact-bar {
+  position: fixed;
+  left: 0;
+  top: 45%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.floating-contact-bar .btn-float {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.floating-contact-bar .phone {
+  background-color: #1a2a3a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.floating-contact-bar .whatsapp {
+  background-color: #25d366;
+}
+
+.floating-recommendation {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 1000;
+}
+
+.btn-rec {
+  background-color: #d1b88a;
+  color: #0b1120;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 10px 18px;
+  border-radius: 2px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s ease;
+}
+
+.btn-rec:hover {
+  background-color: #dfc89d;
+  color: #000000;
+}
+
+.btn-rec .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #0b1120;
+}
+
+/* ==========================================
+   3. NAVBAR STYLES
+   ========================================== */
+.bg-custom-dark {
+  background-color: #1a233a;
+}
+
+.custom-navbar {
+  background-color: #1a233a;
+}
+
+.brand-title {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.brand-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #d1b88a;
+  border-top: 1px solid rgba(209, 184, 138, 0.4);
+  padding-top: 4px;
+  margin-top: 4px;
+}
+
+.custom-navbar .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  color: #e2e8f0;
+  transition: 0.2s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #d1b88a !important;
+}
+
+.btn-gold {
+  background: linear-gradient(180deg, #f0c52f 0%, #c48b0a 100%);
+  color: #0d1322;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  border: 1px solid #ffe885;
+  border-radius: 2px;
+  padding: 0.6rem 1.4rem;
+  box-shadow: 0px 0px 10px rgba(240, 197, 47, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(180deg, #f7d247 0%, #d49710 100%);
+  color: #000000;
+  box-shadow: 0px 0px 15px rgba(240, 197, 47, 0.5);
+}
+
+/* ==========================================
+   4. MARQUEE / TICKER BAR STYLES
+   ========================================== */
+.ticker-bar {
+  background-color: #151c2e;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.ticker-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 13s linear infinite;
+}
+
+.ticker-wrapper:hover {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: #d1d5db;
+  padding: 0 1.5rem;
+}
+
+.ticker-bullet {
+  color: #d1b88a;
+  margin-right: 12px;
+  font-size: 1rem;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ==========================================
+   5. REFER HERO BANNER
+   ========================================== */
+.refer-hero-section {
+  background-color: #1a233a;
+  padding: 70px 15px 65px;
+}
+
+.refer-badge {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: #d1b88a;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.refer-hero-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.7rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+}
+
+.refer-hero-title .highlight-gold {
+  color: #d1b88a;
+}
+
+.refer-hero-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #b0b9c9;
+  line-height: 1.7;
+  max-width: 680px;
+}
+
+.text-gold-bold {
+  color: #d1b88a;
+  font-weight: 600;
+}
+
+/* ==========================================
+   6. REFERRAL FORM SECTION
+   ========================================== */
+.refer-form-section {
+  background-color: #f7f9fb;
+  padding: 60px 15px 90px;
+}
+
+.refer-form-card {
+  max-width: 820px;
+  background-color: #ffffff;
+  padding: 50px 55px;
+  border-radius: 2px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.04);
+  border: 1px solid #eaeaea;
+}
+
+.form-section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #1a233a;
+  margin-bottom: 20px;
+}
+
+.refer-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #1a233a;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.refer-input {
+  border: 1px solid #d9dfe7;
+  border-radius: 0;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  color: #2d3748;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.refer-input::placeholder {
+  color: #a0aec0;
+  font-size: 0.88rem;
+  font-weight: 300;
+}
+
+.refer-input:focus {
+  border-color: #d1b88a;
+  box-shadow: 0 0 0 1px #d1b88a;
+  outline: none;
+}
+
+.refer-textarea {
+  resize: vertical;
+}
+
+.btn-refer-submit {
+  background-color: #cbab6e;
+  color: #1a233a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  padding: 14px 38px;
+  border: none;
+  border-radius: 0;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-refer-submit:hover {
+  background-color: #b8985c;
+  color: #0d1322;
+  transform: translateY(-1px);
+}
+
+.refer-disclaimer {
+  font-size: 0.78rem;
+  color: #8c98a9;
+  font-weight: 400;
+}
+
+/* ==========================================
+   7. FOOTER SECTION
+   ========================================== */
+.footer-section {
+  background-color: #080d18;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+}
+
+.footer-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+.social-box {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.social-box:hover {
+  border-color: #c5a059;
+  color: #c5a059;
+}
+
+.footer-heading {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.2rem;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #c5a059;
+}
+
+.footer-contact li {
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.8rem;
+}
+
+.badge-rera {
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  color: #c5a059;
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  padding: 4px 10px;
+}
+
+/* ==========================================
+   8. RESPONSIVE BREAKPOINTS
+   ========================================== */
+@media (max-width: 768px) {
+  .refer-hero-title {
+    font-size: 2.1rem;
+  }
+  .refer-form-card {
+    padding: 35px 20px;
+  }
+}

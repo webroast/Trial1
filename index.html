@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Brick Navbar with Marquee</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Custom External CSS -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!--===============================================Styles============================================-->
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark py-3 custom-navbar">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <svg class="me-3" width="55" height="45" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 5 L5 40 L15 40 L15 75 L85 75 L85 40 L95 40 Z" stroke="#d1b88a" stroke-width="4" fill="#f4ebd9" />
+          <path d="M70 20 L70 10 L80 10 L80 28" stroke="#d1b88a" stroke-width="3" fill="#f4ebd9" />
+          <line x1="15" y1="50" x2="85" y2="50" stroke="#d1b88a" stroke-width="1.5" />
+          <line x1="15" y1="62" x2="85" y2="62" stroke="#d1b88a" stroke-width="1.5" />
+          <line x1="35" y1="40" x2="35" y2="50" stroke="#d1b88a" stroke-width="1.5" />
+          <line x1="65" y1="40" x2="65" y2="50" stroke="#d1b88a" stroke-width="1.5" />
+          <line x1="50" y1="50" x2="50" y2="62" stroke="#d1b88a" stroke-width="1.5" />
+          <line x1="30" y1="62" x2="30" y2="75" stroke="#d1b88a" stroke-width="1.5" />
+          <line x1="70" y1="62" x2="70" y2="75" stroke="#d1b88a" stroke-width="1.5" />
+        </svg>
+
+        <div class="d-flex flex-column">
+          <span class="brand-title">WHITE BRICK</span>
+          <span class="brand-subtitle">REAL ESTATE CONSULTANTS</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-menu navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link px-3" href="./properties.html">See All Properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="About.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="Contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="d-flex">
+          <a href="Refer.html" class="btn btn-gold text-uppercase">Refer & Earn ₹50,000+</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Marquee Ticker Bar -->
+  <div class="ticker-bar py-2">
+    <div class="ticker-wrapper">
+      
+      <!-- Content Block 1 -->
+      <span class="ticker-item">
+        <span class="ticker-bullet">&#9679;</span>Premium plots along Yamuna Expressway &mdash; Limited inventory
+      </span>
+      <span class="ticker-item">
+        <span class="ticker-bullet">&#9679;</span>New luxury villas launched in Sector 150 &mdash; Prices starting &#8377;2.5 Cr
+      </span>
+      <span class="ticker-item">
+        <span class="ticker-bullet">&#9679;</span>Exclusive pre-launch pricing available on select projects
+      </span>
+      <span class="ticker-item">
+        <span class="ticker-bullet">&#9679;</span>Ready-to-move apartments now available in Greater Noida West
+      </span>
+
+      <!-- Content Block 2 (Duplicated for smooth seamless looping) -->
+      <span class="ticker-item">
+        <span class="ticker-bullet">&#9679;</span>Premium plots along Yamuna Expressway &mdash; Limited inventory
+      </span>
+      <span class="ticker-item">
+        <span class="ticker-bullet">&#9679;</span>New luxury villas launched in Sector 150 &mdash; Prices starting &#8377;2.5 Cr
+      </span>
+      <span class="ticker-item">
+        <span class="ticker-bullet">&#9679;</span>Exclusive pre-launch pricing available on select projects
+      </span>
+      <span class="ticker-item">
+        <span class="ticker-bullet">&#9679;</span>Ready-to-move apartments now available in Greater Noida West
+      </span>
+
+    </div>
+  </div>
+
+  <!-- Floating Contact Actions -->
+    <div class="fixed-social-bar">
+        <a href="tel:#" class="phone-icon" title="Call Us">
+            <i class="bi bi-telephone"></i>
+        </a>
+        <a href="https://wa.me/#" class="whatsapp-icon" title="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Main Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            
+            <!-- Tagline -->
+            <div class="tagline-container">
+                <div class="tagline-line"></div>
+                <span class="hero-tagline">Real Estate, Done Right</span>
+                <div class="tagline-line"></div>
+            </div>
+
+            <!-- Brand Name -->
+            <h1 class="hero-title text-uppercase">White Brick</h1>
+
+            <!-- Subtitle -->
+            <p class="hero-subtitle">Curating the Finest Residential Living in Delhi NCR</p>
+
+            <!-- Search Field -->
+            <div class="search-box-wrapper">
+                <div class="search-input-group">
+                    <i class="bi bi-search search-icon"></i>
+                    <input type="text" placeholder="Try: '|'" aria-label="Search location or property">
+                    <button class="btn-submit" type="button">
+                        <i class="bi bi-send-fill"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Filter Categories / Tabs -->
+            <div class="hero-tabs">
+                <a href="#" class="tab-btn active">Apartment</a>
+                <a href="#" class="tab-btn">Commercial Spaces</a>
+                <a href="#" class="tab-btn">Plots</a>
+                <a href="#" class="tab-btn sell-badge">
+                    <span>♦ Sell Property</span>
+                    <span class="badge-free">FREE</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Main Section -->
+    <section class="properties-section">
+        <div class="container">
+            
+            <!-- Section Title -->
+            <div class="text-center">
+                <div class="tagline-container">
+                    <div class="tagline-line"></div>
+                    <span class="section-tagline">Hand-Picked Selection</span>
+                    <div class="tagline-line"></div>
+                </div>
+                <h2 class="section-title text-dark text-uppercase">Exclusive Properties</h2>
+                <p class="section-subtitle">
+                    A curated collection of NCR's most distinguished residential addresses, reserved for the discerning few.
+                </p>
+            </div>
+
+            <!-- Property Cards Grid -->
+            <div class="row g-4">
+                
+                <!-- Card 1 -->
+                <div class="col-12 col-md-4">
+                    <div class="card property-card h-100 border-0 shadow-sm">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Amaatra Crystal">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <span class="property-location text-uppercase">SECTOR 115, NOIDA</span>
+                                <h5 class="property-title my-2">IVORY COUNTY</h5>
+                                <p class="property-builder">County Group</p>
+
+                                  <!-- Barely Visible Faint Horizontal Divider -->
+                                      <hr class="card-divider">
+                            </div>
+                            <div class="property-details d-flex align-items-center justify-content-between mt-3">
+                                <span class="price fw-bold">Price On Request</span>
+                                <span class="specs text-muted">3, 4 BHK &nbsp;·&nbsp; 1322 - 2525 Sq.Ft.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="card property-card h-100 border-0 shadow-sm">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Amaatra Suites">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <span class="property-location text-uppercase">VASUNDHARA , GHAZIABAD</span>
+                                <h5 class="property-title my-2">AMAATRA SUITES</h5>
+                                 <p class="property-builder">County Group</p>
+
+                                  <!-- Barely Visible Faint Horizontal Divider -->
+                                      <hr class="card-divider">
+                            </div>
+                            <div class="property-details d-flex align-items-center justify-content-between mt-3">
+                                <span class="price fw-bold">Price On Request</span>
+                                <span class="specs text-muted">1 BHK &nbsp;·&nbsp; 662 - 728 Sq.Ft.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-4">
+                    <div class="card property-card h-100 border-0 shadow-sm">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Ivory County">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <span class="property-location text-uppercase">SECTOR 115, NOIDA</span>
+                                <h5 class="property-title my-2">IVORY COUNTY</h5>
+                                 <span class="property-builder text-muted">County Group</span>
+
+                                  <!-- Barely Visible Faint Horizontal Divider -->
+                                      <hr class="card-divider">
+                            </div>
+                            <div class="property-details d-flex align-items-center justify-content-between mt-3">
+                                <span class="price fw-bold">₹3.76 - 6.23 Cr</span>
+                                <span class="specs text-muted">3, 4 BHK &nbsp;·&nbsp; 2034 - 6939 Sq.Ft.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+
+              <div class="container text-center py-5">
+        <!-- View All Properties Button -->
+        <a href="#" class="btn btn-view-all">
+            VIEW ALL PROPERTIES
+            <span class="arrow">&rarr;</span>
+        </a>
+    </div>
+        </div>
+    </section>
+
+
+    <!-- Exclusive Plots Section Header -->
+    <section class="exclusive-plots-section">
+        <div class="container text-center">
+            
+            <!-- Top Tagline -->
+            <div class="tagline-container">
+                <div class="tagline-line"></div>
+                <span class="section-tagline">Plots &amp; Kothis</span>
+                <div class="tagline-line"></div>
+            </div>
+
+            <!-- Main Heading -->
+            <h2 class="section-title text-dark text-uppercase">Exclusive Plots</h2>
+
+            <!-- Paragraph Description -->
+            <p class="section-subtitle text-dark">
+                Hand-picked resale plots and independent kothis across Noida &amp; Faridabad — corner plots, green-belt frontage, and ready-built homes.
+            </p>
+
+        </div>
+    </section>
+
+
+    <div class="container py-5">
+        <div class="row g-4">
+            
+            <!-- Card 1: Photos Coming Soon -->
+            <div class="col-12 col-md-4">
+                <div class="card property-card h-100">
+                    <div class="card-media-wrapper">
+                        <span class="badge-resale">Resale</span>
+                        <div class="photo-placeholder">
+                            Photos coming soon
+                        </div>
+                    </div>
+                    
+                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="property-location text-uppercase">SECTOR 48, NOIDA</span>
+                            <h3 class="property-title text-uppercase">450 Sq.M Duplex Kothi · Sector 48, Noida</h3>
+                        </div>
+
+                        <div>
+                            <hr class="card-divider">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="property-price">
+                                    ₹19 Cr <span class="price-neg">(neg.)</span>
+                                </span>
+                                <span class="property-specs">
+                                    450 Sq.M <span class="dot">·</span> 9 road
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Image Carousel with Gold Text -->
+            <div class="col-12 col-md-4">
+                <div class="card property-card h-100">
+                    <div class="card-media-wrapper">
+                        <span class="badge-resale">Resale</span>
+                        
+                        <!-- Image Carousel -->
+                        <div id="cardCarousel2" class="carousel slide h-100" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#cardCarousel2" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                                <button type="button" data-bs-target="#cardCarousel2" data-bs-slide-to="1"></button>
+                            </div>
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
+                                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=800&auto=format&fit=crop" class="d-block w-100 h-100 object-fit-cover" alt="Sector 40 Plot">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop" class="d-block w-100 h-100 object-fit-cover" alt="Sector 40 Plot Alt">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="property-location text-uppercase">SECTOR 40, NOIDA</span>
+                            <h3 class="property-title title-gold text-uppercase">450 Sq.M Plot · Sector 40, Noida</h3>
+                        </div>
+
+                        <div>
+                            <hr class="card-divider">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="property-price">
+                                    ₹18 Cr <span class="price-neg">(neg.)</span>
+                                </span>
+                                <span class="property-specs">
+                                    450 Sq.M <span class="dot">·</span> 30 m road
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Multi-indicator Carousel -->
+            <div class="col-12 col-md-4">
+                <div class="card property-card h-100">
+                    <div class="card-media-wrapper">
+                        <span class="badge-resale">Resale</span>
+                        
+                        <!-- Multi-Image Carousel -->
+                        <div id="cardCarousel3" class="carousel slide h-100" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#cardCarousel3" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                                <button type="button" data-bs-target="#cardCarousel3" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#cardCarousel3" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#cardCarousel3" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#cardCarousel3" data-bs-slide-to="4"></button>
+                            </div>
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
+                                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" class="d-block w-100 h-100 object-fit-cover" alt="Sector 47 Plot Interior">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop" class="d-block w-100 h-100 object-fit-cover" alt="Sector 47 Plot Exterior">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="property-location text-uppercase">SECTOR 47, NOIDA</span>
+                            <h3 class="property-title text-uppercase">450 Sq.M Plot · Sector 47, Noida</h3>
+                        </div>
+
+                        <div>
+                            <hr class="card-divider">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="property-price">
+                                    ₹15 Cr
+                                </span>
+                                <span class="property-specs">
+                                    450 Sq.M <span class="dot">·</span> 12 m road
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center py-5">
+        <!-- View All Properties Button -->
+        <a href="#" class="btn btn-view-all">
+            VIEW ALL PLOTS
+            <span class="arrow">&rarr;</span>
+        </a>
+    </div>
+        </div>
+
+        </div>
+    </div>
+
+
+    <!-- Premium Neighbourhoods Section Header -->
+    <section class="neighbourhoods-section">
+        <div class="container text-center">
+            
+            <!-- Top Tagline -->
+            <div class="tagline-container">
+                <div class="tagline-line"></div>
+                <span class="section-tagline">Explore Areas</span>
+                <div class="tagline-line"></div>
+            </div>
+
+            <!-- Main Heading -->
+            <h2 class="section-title text-dark text-uppercase">Premium Neighbourhoods</h2>
+
+            <!-- Subtitle Description -->
+            <p class="section-subtitle text-dark">
+                Discover properties in NCR's most sought-after residential corridors.
+            </p>
+
+        </div>
+    </section>
+
+
+    <div class="container py-5">
+        <div class="row g-4">
+            
+            <!-- Area 1 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="#" class="area-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" class="area-card-img" alt="Sector 129, Noida">
+                    <div class="area-card-overlay">
+                        <h3 class="area-title text-uppercase">Sector 129, Noida</h3>
+                        <p class="area-count">1 property</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Area 2 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="#" class="area-card">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop" class="area-card-img" alt="Sector 128, Noida">
+                    <div class="area-card-overlay">
+                        <h3 class="area-title text-uppercase">Sector 128, Noida</h3>
+                        <p class="area-count">1 property</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Area 3 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="#" class="area-card">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop" class="area-card-img" alt="Sector 105, Noida">
+                    <div class="area-card-overlay">
+                        <h3 class="area-title text-uppercase">Sector 105, Noida</h3>
+                        <p class="area-count">1 property</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Area 4 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <a href="#" class="area-card">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop" class="area-card-img" alt="Sector 115, Noida">
+                    <div class="area-card-overlay">
+                        <h3 class="area-title text-uppercase">Sector 115, Noida</h3>
+                        <p class="area-count">2 properties</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Why White Brick Section -->
+    <section class="why-us-section">
+        <div class="container text-center">
+            
+            <!-- Header Tagline -->
+            <div class="tagline-container">
+                <div class="tagline-line"></div>
+                <span class="section-tagline">Why White Brick</span>
+                <div class="tagline-line"></div>
+            </div>
+
+            <!-- Main Heading Title -->
+            <h2 class="section-title text-dark text-uppercase">
+                Trusted Advisors in Building Real Estate Portfolios
+            </h2>
+
+            <!-- Narrative Paragraph -->
+            <p class="section-description">
+                White Brick was built on a simple belief — real estate decisions should be driven by logic, not pressure. 
+                We don’t push inventory or limit ourselves to a single asset class. Instead, we work with you to 
+                understand your goals, risk appetite, and time horizon, and help you build a structured real estate 
+                portfolio across residential, commercial, and emerging opportunities. Every recommendation is filtered 
+                through long-term value, not short-term commissions. We evaluate developers, locations, and deal 
+                structures with discipline, so you make fewer but far better decisions. Think of us as your real estate 
+                advisors — not here to sell, but to guide.
+            </p>
+
+            <!-- Faint Divider -->
+            <hr class="stats-divider">
+
+            <!-- Stats Block -->
+            <div class="row justify-content-center g-4 mb-5">
+                <div class="col-6 col-md-4">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Developer Partnerships</div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="stat-number">₹2,000 Cr+</div>
+                    <div class="stat-label">Curated Portfolio Value</div>
+                </div>
+            </div>
+
+            <!-- Call-to-action Button -->
+            <div>
+                <a href="#" class="btn btn-expert-guidance">Get Expert Guidance</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Client Stories Section Header & Cards -->
+<section class="client-stories-section">
+    <div class="container text-center">
+        
+        <!-- Top Tagline -->
+        <div class="tagline-container">
+            <div class="tagline-line"></div>
+            <span class="section-tagline">Client Stories</span>
+            <div class="tagline-line"></div>
+        </div>
+
+        <!-- Main Heading -->
+        <h2 class="section-title text-uppercase">What Our Clients Say</h2>
+
+        <!-- Paragraph Subtitle -->
+        <p class="section-subtitle">
+            We take pride in turning property dreams into addresses. Here's what our families have to say.
+        </p>
+
+        <!-- Testimonial Cards Grid -->
+        <div class="row g-4 mt-4 text-start">
+            
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6">
+                <div class="card testimonial-card h-100 border-0 p-4 p-lg-5">
+                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                        <div>
+                            <!-- Star Rating -->
+                            <div class="star-rating mb-4">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <!-- Review Text -->
+                            <p class="testimonial-text">
+                                "As an NRI, understanding the ground reality of Indian real estate isn't easy. Working with White Brick Real Estate changed that for me. They do thorough due diligence, are transparent about pitfalls, and don't sell like typical brokers. Their advice feels genuine and aligned with my long-term interests. I'm now confident enough to have them manage my real estate portfolio to them. Highly recommended to especially NRIs who need somebody to rely upon real estate decisions."
+                            </p>
+                        </div>
+
+                        <!-- Author & Quote Icon Footer -->
+                        <div class="d-flex align-items-end justify-content-between mt-4">
+                            <div>
+                                <h5 class="author-name mb-1">Digbijoy Shukla</h5>
+                                <p class="author-subtext mb-0">Singapore based NRI</p>
+                            </div>
+                            <div class="quote-badge">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6">
+                <div class="card testimonial-card h-100 border-0 p-4 p-lg-5">
+                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                        <div>
+                            <!-- Star Rating -->
+                            <div class="star-rating mb-4">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <!-- Review Text -->
+                            <p class="testimonial-text">
+                                "I've been actively investing in real estate for the past 5 years and believed I understood the space well. Working with White Brick Real Estate made me realize how much more there is to it, real estate investing needs structure, not just instinct. They helped bring clarity to my long term objectives, structured my approach, and laid out a clear path to ROI. It's a completely different way of looking at real estate investments."
+                            </p>
+                        </div>
+
+                        <!-- Author & Quote Icon Footer -->
+                        <div class="d-flex align-items-end justify-content-between mt-4">
+                            <div>
+                                <h5 class="author-name mb-1">Rajiv Gupta</h5>
+                                <p class="author-subtext mb-0">Business Owner, NCR region</p>
+                            </div>
+                            <div class="quote-badge">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+  <!-- ==========================================
+       FOOTER SECTION (replaced with White Brick "Refer & Earn" style footer)
+       ========================================== -->
+  <footer class="footer-section">
+    <div class="container py-5">
+      <div class="row g-4">
+
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center mb-3">
+            <svg class="me-3" width="38" height="34" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 5 L5 40 L15 40 L15 75 L85 75 L85 40 L95 40 Z" stroke="#d1b88a" stroke-width="4" fill="#f4ebd9" />
+              <path d="M70 20 L70 10 L80 10 L80 28" stroke="#d1b88a" stroke-width="3" fill="#f4ebd9" />
+              <line x1="15" y1="50" x2="85" y2="50" stroke="#d1b88a" stroke-width="1.5" />
+              <line x1="15" y1="62" x2="85" y2="62" stroke="#d1b88a" stroke-width="1.5" />
+              <line x1="35" y1="40" x2="35" y2="50" stroke="#d1b88a" stroke-width="1.5" />
+              <line x1="65" y1="40" x2="65" y2="50" stroke="#d1b88a" stroke-width="1.5" />
+            </svg>
+            <div class="d-flex flex-column">
+              <span class="brand-title">WHITE BRICK</span>
+              <span class="brand-subtitle">REAL ESTATE CONSULTANTS</span>
+            </div>
+          </div>
+          <p class="footer-desc mt-3">
+            Curating the finest residential living in Delhi NCR. White Brick is your trusted luxury property consultancy.
+          </p>
+          <div class="social-icons d-flex gap-2 mt-4">
+            <a href="#" class="social-box"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-box"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-box"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading text-uppercase">QUICK LINKS</h5>
+          <ul class="footer-links">
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Legal & Earn -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading text-uppercase">LEGAL</h5>
+          <ul class="footer-links mb-4">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+          <h5 class="footer-heading text-uppercase">EARN</h5>
+          <ul class="footer-links">
+            <li><a href="#">Sell Property</a></li>
+            <li><a href="Refer.html">Refer & Earn</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Get In Touch -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading text-uppercase">GET IN TOUCH</h5>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-phone me-2 text-gold"></i> +91 981 896 9369</li>
+            <li><i class="fa-solid fa-phone me-2 text-gold"></i> +91 999 999 8921</li>
+            <li><i class="fa-regular fa-envelope me-2 text-gold"></i> sales@whitebrickrealestate.com</li>
+            <li><i class="fa-solid fa-location-dot me-2 text-gold"></i> F21, Sector 39, Noida, UP, 201301</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar mt-5 pt-4 d-flex justify-content-between align-items-center flex-wrap">
+        <p class="mb-0 text-muted">&copy; 2026 White Brick Real Estate Consultants. All rights reserved.</p>
+        <span class="badge-rera text-uppercase">Professional Real Estate Consultants</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
